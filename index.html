@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIGITAL MOVE - CSC Center</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0046be">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* simplified styles */
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f0f4f8; }
+    header { background: #0046be; color: white; text-align: center; padding: 2rem; }
+    .container { padding: 2rem; }
+    .service { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 10px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 0.5rem 0; }
+    form button { background: #0046be; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    footer { text-align: center; background: #0046be; color: white; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DIGITAL MOVE</h1>
+    <p>Your Trusted CSC Center</p>
+  </header>
+  <div class="container">
+    <div class="service">
+      <h2>Driving Licence Services</h2>
+      <p>Apply for learner or permanent licence, renew licence and check status.</p>
+    </div>
+    <!-- Add more services here as needed -->
+    <div class="service">
+      <h2>Contact Us</h2>
+      <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Your Phone Number" required />
+        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 DIGITAL MOVE</p>
+  </footer>
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      const url = `https://wa.me/916283731379?text=Hello, my name is ${name}. Phone: ${phone}. Message: ${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
