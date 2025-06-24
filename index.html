@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIGITAL MOVE - CSC Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0046be, #007bff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #0046be;
+    }
+
+    .form-card {
+      background: white;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #0046be;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    form button:hover {
+      background: #0033a0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0046be;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3388/3388613.png" alt="Digital Move Logo" />
+    <h1>DIGITAL MOVE</h1>
+    <p>Your Trusted CSC Center for All Digital Services</p>
+  </header>
+
+  <div class="container">
+
+    <div class="service-grid">
+
+      <!-- Each service with 3D icon and color -->
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Aadhar" />
+        <h3>Aadhar Services</h3>
+        <p>New Aadhar, biometric updates, e-Aadhar download, and status check.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png" alt="PAN" />
+        <h3>PAN Card Services</h3>
+        <p>Apply for new PAN card, corrections, and re-issue support.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4286/4286233.png" alt="Bill Payment" />
+        <h3>Bill Payments</h3>
+        <p>Pay electricity, water, gas bills quickly and securely.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2490/2490466.png" alt="Form Filling" />
+        <h3>Online Form Filling</h3>
+        <p>Government jobs, scholarships, exams – we help you apply correctly.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1802/1802979.png" alt="Schemes" />
+        <h3>Government Schemes</h3>
+        <p>PM Kisan, Ayushman Bharat, Ujjwala Yojana registrations and support.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3522/3522082.png" alt="Banking" />
+        <h3>Banking & Insurance</h3>
+        <p>Cash deposit, withdrawal, insurance enrollment & account updates.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3564/3564124.png" alt="Passport" />
+        <h3>Passport Services</h3>
+        <p>New passport application and appointment scheduling help.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565340.png" alt="Recharge" />
+        <h3>Mobile & DTH Recharge</h3>
+        <p>Instant recharge for all mobile and DTH service providers.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1146/1146881.png" alt="Railway" />
+        <h3>Railway Ticket Booking</h3>
+        <p>Book IRCTC railway tickets with Tatkal and general quota support.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2542/2542485.png" alt="Driving Licence" />
+        <h3>Driving Licence Service</h3>
+        <p>Apply for learner, permanent licence, and renewal online.</p>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-card">
+      <h2>Contact Us</h2>
+      <p>Submit your query or service request below:</p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <input type="email" name="email" placeholder="Your Email (optional)" />
+        <textarea name="message" rows="4" placeholder="What service do you need?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DIGITAL MOVE | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+
+    <!-- Downloads Section -->
+    <div class="form-card">
+      <h2>Download Forms</h2>
+      <a href="files/driving-licence-form.pdf" download>
+        <button>Download Driving Licence Form</button>
+      </a>
+      <a href="files/pan-card-form.pdf" download>
+        <button>Download PAN Card Form</button>
+      </a>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="form-card">
+      <h2>Pay Online</h2>
+      <p>Scan to Pay (UPI ID: 6283731379@ptyes)</p>
+      <img src="files/upi-qr-placeholder.png" alt="Scan QR to Pay" width="200"/>
+    </div>
+
+    <!-- Language Switch -->
+    <div style="text-align:center; margin: 30px 0;">
+      <label for="language">Choose Language: </label>
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+      </select>
+    </div>
+
+    <script>
+      const translations = {
+        hi: {
+          title: "डिजिटल मूव",
+          tagline: "आपका विश्वसनीय सीएससी केंद्र",
+          contact: "संपर्क करें"
+        },
+        pa: {
+          title: "ਡਿਜੀਟਲ ਮੂਵ",
+          tagline: "ਤੁਹਾਡਾ ਭਰੋਸੇਮੰਦ CSC ਸੈਂਟਰ",
+          contact: "ਸੰਪਰਕ ਕਰੋ"
+        },
+        en: {
+          title: "DIGITAL MOVE",
+          tagline: "Your Trusted CSC Center for All Digital Services",
+          contact: "Contact Us"
+        }
+      };
+
+      function changeLanguage(lang) {
+        document.querySelector('header h1').textContent = translations[lang].title;
+        document.querySelector('header p').textContent = translations[lang].tagline;
+        document.querySelector('.form-card h2').textContent = translations[lang].contact;
+      }
+    </script>
+
+    <!-- More Download Forms -->
+    <div class="form-card">
+      <h2>Download More Forms</h2>
+      <a href="files/income-certificate-form.pdf" download><button>Income Certificate Form</button></a>
+      <a href="files/domicile-certificate-form.pdf" download><button>Domicile Certificate Form</button></a>
+      <a href="files/caste-certificate-form.pdf" download><button>Caste Certificate Form</button></a>
+    </div>
+
+    <!-- Update QR code image -->
+    <div class="form-card">
+      <h2>Pay Online</h2>
+      <p>Scan to Pay (UPI ID: 6283731379@ptyes)</p>
+      <img src="files/upi-qr.png" alt="Scan QR to Pay" width="200"/>
+    </div>
+
+    <!-- WhatsApp Form Integration -->
+    <script>
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = this.name.value;
+        const phone = this.phone.value;
+        const service = this.message.value;
+        const whatsappUrl = `https://wa.me/916283731379?text=Hello%20DIGITAL%20MOVE,%20My%20name%20is%20${name}%20(%2B91-${phone}).%20I%20need%20help%20with:%20${encodeURIComponent(service)}`;
+        window.open(whatsappUrl, '_blank');
+      });
+    </script>
+
+<div class="form-card">
+  <h2>Upload Your Documents</h2>
+  <form method="POST" action="https://formspree.io/f/mzbldjgy" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Your Phone Number" required />
+    <input type="file" name="file" required />
+    <button type="submit">Upload</button>
+  </form>
+</div>
+
+<script>
+  const textMap = {
+    en: {
+      title: "DIGITAL MOVE",
+      tagline: "Your Trusted CSC Center for All Digital Services",
+      contact: "Contact Us",
+      download: "Download Forms",
+      services: [
+        "Aadhar Services", "PAN Card Services", "Bill Payments", "Online Form Filling",
+        "Government Schemes", "Banking & Insurance", "Passport Services",
+        "Mobile & DTH Recharge", "Railway Ticket Booking", "Driving Licence Service"
+      ]
+    },
+    hi: {'title': 'डिजिटल मूव', 'tagline': 'आपका विश्वसनीय CSC केंद्र', 'contact': 'संपर्क करें', 'download': 'फॉर्म डाउनलोड करें', 'services': ['आधार सेवाएँ', 'पैन कार्ड सेवाएँ', 'बिल भुगतान', 'ऑनलाइन फॉर्म भरना', 'सरकारी योजनाएँ', 'बैंकिंग और बीमा', 'पासपोर्ट सेवाएँ', 'मोबाइल और DTH रिचार्ज', 'रेलवे टिकट बुकिंग', 'ड्राइविंग लाइसेंस सेवाएँ']},
+    pa: {'title': 'ਡਿਜੀਟਲ ਮੂਵ', 'tagline': 'ਤੁਹਾਡਾ ਭਰੋਸੇਮੰਦ CSC ਸੈਂਟਰ', 'contact': 'ਸੰਪਰਕ ਕਰੋ', 'download': 'ਫਾਰਮ ਡਾਊਨਲੋਡ ਕਰੋ', 'services': ['ਆਧਾਰ ਸੇਵਾਵਾਂ', 'ਪੈਨ ਕਾਰਡ ਸੇਵਾਵਾਂ', 'ਬਿਲ ਭੁਗਤਾਨ', 'ਆਨਲਾਈਨ ਫਾਰਮ ਭਰਨਾ', 'ਸਰਕਾਰੀ ਯੋਜਨਾਵਾਂ', 'ਬੈਂਕਿੰਗ ਅਤੇ ਇੰਸ਼ੂਰੈਂਸ', 'ਪਾਸਪੋਰਟ ਸੇਵਾਵਾਂ', 'ਮੋਬਾਈਲ ਅਤੇ DTH ਰੀਚਾਰਜ', 'ਰੇਲਵੇ ਟਿਕਟ ਬੁਕਿੰਗ', 'ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਸੇਵਾ']}
+  };
+
+  function changeLanguage(lang) {
+    const t = textMap[lang];
+    document.querySelector('header h1').textContent = t.title;
+    document.querySelector('header p').textContent = t.tagline;
+    document.querySelector('.form-card h2').textContent = t.contact;
+
+    const serviceTitles = document.querySelectorAll(".service-card h3");
+    serviceTitles.forEach((el, i) => {
+      if (t.services[i]) el.textContent = t.services[i];
+    });
+  }
+
+  // Success Message on WhatsApp Send
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = this.name.value;
+    const phone = this.phone.value;
+    const service = this.message.value;
+    const whatsappUrl = `https://wa.me/916283731379?text=Hello%20DIGITAL%20MOVE,%20My%20name%20is%20${name}%20(%2B91-${phone}).%20I%20need%20help%20with:%20${encodeURIComponent(service)}`;
+    window.open(whatsappUrl, '_blank');
+    alert("✅ Thank you! We’ll contact you shortly.");
+  });
+</script>
